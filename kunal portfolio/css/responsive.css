@@ -1,0 +1,44 @@
+/* =============================================
+   responsive.css — Supplemental breakpoints
+   Core mobile styles are in style.css
+   ============================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .navbar { padding: 15px 40px; }
+    .about-main, .cyber-main { padding: 120px 7% 70px; }
+    .contact-main { padding: 120px 7% 70px; }
+    .footer { padding: 45px 40px; }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .reveal-text { font-size: clamp(2rem, 8vw, 3rem); }
+    .reveal-subtext { font-size: 1rem; }
+
+    .home-button { flex-direction: column; align-items: center; }
+    .btn { width: 200px; }
+
+    .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .safety-grid { grid-template-columns: 1fr; }
+
+    .contact-main h1 { margin-bottom: 35px; }
+    .btn-submit { width: 100%; text-align: center; }
+
+    .footer { padding: 36px 20px; }
+    .footer-links { gap: 18px; }
+
+    /* Sidebar visible on mobile via JS toggle */
+    .sidebar {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+    .navbar { padding: 14px 18px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .about-main, .cyber-main, .contact-main { padding: 100px 5% 50px; }
+}
